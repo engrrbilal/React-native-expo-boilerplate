@@ -17,8 +17,8 @@ export default class AuthLoadingScreen extends React.Component {
     // screen will be unmounted and thrown away.
     // console.log("userToken: ", userToken);
     console.log("isLoggedIn: ", isLoggedIn);
-    this.props.navigation.navigate("Main");
-    // this.props.navigation.navigate(userToken && isLoggedIn ? "Main" : "Login");
+    this.props.navigation.navigate(isLoggedIn ? "Main" : "Login");
+    // this.props.navigation.navigate("Main");
   };
 
   render() {

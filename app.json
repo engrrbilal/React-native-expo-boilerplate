@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "boilerplate",
-    "slug": "boilerplate",
+    "name": "MasterBoilerPlate",
+    "slug": "MasterBoilerPlate",
     "privacy": "public",
     "sdkVersion": "35.0.0",
     "platforms": ["ios", "android", "web"],
@@ -19,11 +19,11 @@
     "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "boilerplate.reporting.app",
+      "bundleIdentifier": "MasterBoilerPlate.app",
       "buildNumber": "1.0.0"
     },
     "android": {
-      "package": "boilerplate.reporting.app",
+      "package": "MasterBoilerPlate.app",
       "versionCode": 1
     }
   }

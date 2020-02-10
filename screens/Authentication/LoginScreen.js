@@ -11,6 +11,7 @@ import {
   AsyncStorage
 } from "react-native";
 import { showAlertMessage } from "../../utils/helpers";
+import logo from "../../assets/images/robot-dev.png";
 import FlashMessage, { hideMessage } from "react-native-flash-message";
 
 export default class Login extends Component {
@@ -61,12 +62,12 @@ export default class Login extends Component {
   startSignInAndSetStorage(loginCred) {
     try {
       const { navigation } = this.props;
+      AsyncStorage.setItem("isLoggedIn","true")
       this.setState(
         {
           isLoading: false
         },
         () => {
-          console.log("this.state: ", this.state);
           navigation.navigate("Main");
           this.willUnmount = true;
         }
@@ -88,7 +89,7 @@ export default class Login extends Component {
   render() {
     return (
       <View style={styles.container}>
-        {/* <Image style={styles.welcome} source={logo} /> */}
+        <Image style={styles.welcome} source={logo} />
         <TextInput
           style={styles.inputField}
           placeholder="User Name"

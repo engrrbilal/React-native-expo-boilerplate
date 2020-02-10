@@ -2,17 +2,17 @@ import React, { Component } from "react";
 import { ScrollView, StyleSheet, View, Text } from "react-native";
 import HeaderComponent from "../../components/Header";
 
-export default class SalesReportScreen extends Component {
+export default class DrawerScreen2 extends Component {
   render() {
     console.log("this : ", this);
     return (
       <View style={{ flex: 1 }}>
         <HeaderComponent
-          title="Sales Report"
+          title="Screen 2"
           leftIcon="keyboard-arrow-left"
           navigation={this.props.navigation}
         />
-        <Text>Sales Reports</Text>
+        <Text>Screen 2</Text>
         {/* <ScrollView style={styles.container}>
         </ScrollView> */}
       </View>
@@ -20,7 +20,7 @@ export default class SalesReportScreen extends Component {
   }
 }
 
-SalesReportScreen.navigationOptions = {
+DrawerScreen2.navigationOptions = {
   header: null
 };
 

@@ -9,7 +9,6 @@ import TabBarIcon from "../components/TabBarIcon";
 import HomeScreen from "../screens/HomeScreen";
 import SettingsScreen from "../screens/SettingsScreen";
 import ReportsListScreen from "../screens/Reports/ReportsListScreen";
-import ReportsPageScreen from "../screens/Reports/ReportPageScreen";
 
 const config = Platform.select({
   web: { headerMode: "screen" },
@@ -42,7 +41,6 @@ HomeStack.path = "";
 const ReportsStack = createStackNavigator(
   {
     Reports: ReportsListScreen,
-    Report: ReportsPageScreen
   },
   config
 );

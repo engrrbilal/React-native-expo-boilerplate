@@ -3,9 +3,9 @@ import { View, Button, StyleSheet, AsyncStorage } from "react-native";
 import HeaderComponent from "../components/Header";
 export default class SettingsScreen extends Component {
   _signOutAsync = async () => {
-    await AsyncStorage.removeItem("isLoggedIn");
-    await AsyncStorage.removeItem("session");
-    await AsyncStorage.removeItem("token");
+    // await AsyncStorage.removeItem("isLoggedIn");
+    // await AsyncStorage.removeItem("session");
+    // await AsyncStorage.removeItem("token");
     // await AsyncStorage.clear();
     this.props.navigation.navigate("Login");
   };

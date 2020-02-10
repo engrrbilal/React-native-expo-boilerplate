@@ -13,6 +13,7 @@ import { Divider } from "react-native-elements";
 // import { DrawerItems, NavigationActions } from "react-navigation";
 import { ListItem } from "react-native-elements";
 import { menuItems } from "../navigation/drawerList";
+import logo from "../assets/images/robot-dev.png";
 // import { DrawerItems } from "react-navigation";
 
 export default class DrawerScreen extends Component {
@@ -36,7 +37,7 @@ export default class DrawerScreen extends Component {
         style={styles.SafeAreaFlex}
         forceInset={{ top: "always", horizontal: "never" }}
       >
-        <View style={styles.ViewStyling}>{/* <Image source={logo} /> */}</View>
+        <View style={styles.ViewStyling}><Image source={logo} width={40} height={40}/></View>
         <Divider />
         <ScrollView>
           {/*<DrawerItems {...this.props}/> */}

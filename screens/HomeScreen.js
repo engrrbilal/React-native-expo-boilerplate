@@ -43,6 +43,6 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     textAlign: "center",
-    marginTop: 10
+    marginTop: 20
   }
 });
